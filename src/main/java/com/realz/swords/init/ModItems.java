@@ -29,6 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> BRUH_INGOT = ITEMS.register("bruh_ingot", IngotBase::new);
     public static final RegistryObject<Item> HELL_IRON_INGOT = ITEMS.register("hell_iron_ingot", IngotBase::new);
     public static final RegistryObject<Item> ENDER_INGOT = ITEMS.register("ender_ingot", IngotBase::new);
+    public static final RegistryObject<Item> HYPER_INGOT = ITEMS.register("hyper_ingot", IngotBase::new);
 
     // Shards
     public static final RegistryObject<Item> BLACK_IRON_SHARD = ITEMS.register("black_iron_shard", ShardBase::new);
@@ -62,6 +63,8 @@ public class ModItems {
             new HellIronSword(ModItemTier.HELL, 6, -2.4F, new Item.Properties().tab(Swords.SWORDSTAB)));
     public static final RegistryObject<SwordItem> ENDER_SWORD = ITEMS.register("ender_sword", () ->
             new EnderSword(ModItemTier.ENDER, 8, -2.4F, new Item.Properties().tab(Swords.SWORDSTAB)));
+    public static final RegistryObject<SwordItem> HYPER_SWORD = ITEMS.register("hyper_sword", () ->
+            new HyperSword(ModItemTier.HYPER_INGOT, 5, -2.4F, new Item.Properties().tab(Swords.SWORDSTAB)));
 
     // Combined Swords
     public static final RegistryObject<SwordItem> VAMPIRIC_SWORD = ITEMS.register("vampiric_sword", () ->
